@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calc.js"></script>
+</head>
+<body>
+<div id="home">
+    <div id="inpbox">
+        <input  class="inp" placeholder="0"  onkeydown="
+        if(event.key === 'Enter') {
+            eva();
+        }
+        " type="text">
+    </div>
+    <div id="opbox">
+        <button class="op"  onclick="inp(1)">1</button>
+        <button class="op"  onclick="inp(2)">2</button>
+        <button class="op"  onclick="inp(3)">3</button>
+        <button class="damm op"  onclick="inp('+')">+</button>
+        <button class="op"  onclick="inp(4)">4</button>
+        <button class="op"  onclick="inp(5)">5</button>
+        <button class="op"  onclick="inp(6)">6</button>
+        <button class="damm op"  onclick="inp('-')">-</button>
+        <button class="op"  onclick="inp(7)">7</button>
+        <button class="op"  onclick="inp(8)">8</button>
+        <button class="op"  onclick="inp(9)">9</button>
+        <button class="damm op"  onclick="inp('*')">*</button>
+        <button class="op"  onclick="inp(0)">0</button>
+        <button class="op"  onclick="inp('.')">.</button>
+        <button class="op"  onclick="eva()">=</button>
+        <button class="damm op"  onclick="inp('/')">/</button>
+        <button class="op"  onclick="inp('(')">(</button>
+        <button class="op"  onclick="inp(')')">)</button>
+        <button class="op  bb clr"  onclick="clr('.')">Clear</button>
+        <button class="op  bb clr"  onclick="del()">Del</button>
+    </div>
+    <p>Made with ❤️ by Harshit.</p>
+</div>
+
+
+
+
+    
+</body>
+</html>

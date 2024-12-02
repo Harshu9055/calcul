@@ -1,0 +1,116 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(201, 201, 201);
+}
+
+#home {
+    background-color: black;
+    height: 82vh;
+    width:22vw;
+    border-radius: 25px;
+    border: 2px solid rgb(221, 97, 20);
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#opbox{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    row-gap: 15px; /* Gap between rows */
+    column-gap: 0px; 
+    padding: 20px;
+   
+    
+}
+
+#inpbox{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    height: 16%;
+    border-radius: 25px;
+
+}
+
+.inp{
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid black;
+    color: white;
+    font-size: 46px;
+    text-align: right;
+    padding: 15px;
+
+}
+.op{
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+
+}
+
+.damm{
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    background-color: rgb(241, 109, 9);
+}
+
+.clr{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.bb{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    #home{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+        border-radius: 0px;
+    }
+
+    #inpbox{
+        font-size: 1.8rem;
+    }
+
+   #op{
+        font-size: 1.4rem;
+    }
+}
